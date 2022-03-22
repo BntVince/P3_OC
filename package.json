@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BntVince/Starter.git"
+    "url": "git+https://github.com/BntVince/P3_OC.git"
   },
   "author": "BntPano",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/BntVince/Starter/issues"
+    "url": "https://github.com/BntVince/P3_OC/issues"
   },
-  "homepage": "https://github.com/BntVince/Starter#readme",
+  "homepage": "https://github.com/BntVince/P3_OC#readme",
   "dependencies": {
     "sass": "^1.49.9"
   }
