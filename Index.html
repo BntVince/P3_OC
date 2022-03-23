@@ -1,6 +1,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <script src="https://kit.fontawesome.com/a7c8f0220e.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./css/style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,76 +10,80 @@
     </head>
 
     <body>
-        <header class="header">
-            <img src="./img/logo/ohmyfood.png" alt="logo ohmyfood" class="header__logo">
-        </header>
+        <div class="main">
+            <header class="header">
+                <img src="./img/logo/ohmyfood.png" alt="logo ohmyfood" class="header__logo">
+            </header>
 
-        <div class="loc">
-            <p>Paris, Belleville</p>
-        </div>
-
-        <section id="reserv" class="reserv">
-            <h2>Réservez le menu qui vous convient</h2>
-            <p class="reserv__txt">Découvrez des restaurants d'exception séléctionnés par nos soins.</p>
-            <button class="btn"><a href="Index.html#restaurants"></a></button>
-        </section>
-
-        <section id="fonct" class="fonct">
-            <h2>Fonctionnement</h2>
-
-            <ul class="fonct__menu">
-                <li class="fonct__menu__list fonct__menu__list__choose"><span class="fonct__menu__list__choose__num">1</span><span class="fonct__menu__list__choose__emoj"></span>Choisissez un restaurant</li>
-                <li class="fonct__menu__list fonct__menu__list__comp"><span class="fonct__menu__list__comp__num">2</span><span class="fonct__menu__list__comp__emoj"></span>Composez votre menu</li>
-                <li class="fonct__menu__list fonct__menu__list__eat"><span class="fonct__menu__list__eat__num">3</span><span class="fonct__menu__list__eat__emoj"></span>Dégustez au restaurant</li>
-            </ul>
-        </section>
-
-        <section id="restaurants" class="rest">
-            <h2>Restaurants</h2>
-            <div class="container">
-                <div class="card">
-                    <div class="card__bg card__bg--palette"></div>
-                    <div class="card__descr card__descr--palette">
-                        <h3>La palette du goût</h3>
-                        <p class="card__descr__txt">Ménilmontant</p>
-                        <p class="card__descr__heart"> /3 </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__bg card__bg--note"></div>
-                    <div class="card__descr card__descr--note">
-                        <h3>La note enchantée</h3>
-                        <p class="card__descr__txt">Charonne</p>
-                        <p class="card__descr__heart"> /3 </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__bg card__bg--francaise"></div>
-                    <div class="card__descr card__descr--francaise">
-                        <h3>A la française</h3>
-                        <p class="card__descr__txt">Cité Rouge</p>
-                        <p class="card__descr__heart"> /3 </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__bg card__bg--delice"></div>
-                    <div class="card__descr card__descr--delice">
-                        <h3>Le délice des sens</h3>
-                        <p class="card__descr__txt">Folie-Méricourt</p>
-                        <p class="card__descr__heart"> /3 </p>
-                    </div>
-                </div>
+            <div class="loc">
+                <p class="loc__txt"><i class="fa-solid fa-location-dot"></i>Paris, Belleville</p>
             </div>
-        </section>
 
-        <footer class="footer">
-            <h1>ohmyfood</h1>
-            <ul class="footer__nav">
-                <li class="footer__nav__list"><p>Proposer un restaurant</p></li>
-                <li class="footer__nav__list"><p>Devenir partenaire</p></li>
-                <li class="footer__nav__list"><p>Mentions légales</p></li>
-                <li class="footer__nav__list"><p>Contact</p></li>
-            </ul>
-        </footer>
+            <section id="reserv" class="reserv">
+                <div class="container container--reserv">
+                    <h2 class="reserv__titre">Réservez le menu qui vous convient</h2>
+                    <p class="reserv__txt">Découvrez des restaurants d'exception séléctionnés par nos soins.</p>
+                    <button class="reserv__btn"><a href="Index.html#restaurants">Explorer nos restaurants</a></button>
+                </div>
+            </section>
+
+            <section id="fonct" class="fonct">
+                <h2>Fonctionnement</h2>
+
+                <ul class="fonct__menu">
+                    <li class="fonct__menu__list fonct__menu__list__choose"><span class="fonct__menu__list__choose__num">1</span><span class="fonct__menu__list__choose__emoj"></span>Choisissez un restaurant</li>
+                    <li class="fonct__menu__list fonct__menu__list__comp"><span class="fonct__menu__list__comp__num">2</span><span class="fonct__menu__list__comp__emoj"></span>Composez votre menu</li>
+                    <li class="fonct__menu__list fonct__menu__list__eat"><span class="fonct__menu__list__eat__num">3</span><span class="fonct__menu__list__eat__emoj"></span>Dégustez au restaurant</li>
+                </ul>
+            </section>
+
+            <section id="restaurants" class="rest">
+                <h2>Restaurants</h2>
+                <div class="container">
+                    <div class="card">
+                        <div class="card__bg card__bg--palette"></div>
+                        <div class="card__descr card__descr--palette">
+                            <h3>La palette du goût</h3>
+                            <p class="card__descr__txt">Ménilmontant</p>
+                            <p class="card__descr__heart"> /3 </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__bg card__bg--note"></div>
+                        <div class="card__descr card__descr--note">
+                            <h3>La note enchantée</h3>
+                            <p class="card__descr__txt">Charonne</p>
+                            <p class="card__descr__heart"> /3 </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__bg card__bg--francaise"></div>
+                        <div class="card__descr card__descr--francaise">
+                            <h3>A la française</h3>
+                            <p class="card__descr__txt">Cité Rouge</p>
+                            <p class="card__descr__heart"> /3 </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__bg card__bg--delice"></div>
+                        <div class="card__descr card__descr--delice">
+                            <h3>Le délice des sens</h3>
+                            <p class="card__descr__txt">Folie-Méricourt</p>
+                            <p class="card__descr__heart"> /3 </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <h1>ohmyfood</h1>
+                <ul class="footer__nav">
+                    <li class="footer__nav__list"><p>Proposer un restaurant</p></li>
+                    <li class="footer__nav__list"><p>Devenir partenaire</p></li>
+                    <li class="footer__nav__list"><p>Mentions légales</p></li>
+                    <li class="footer__nav__list"><p>Contact</p></li>
+                </ul>
+            </footer>
+        </div>
     </body>
 </html>
