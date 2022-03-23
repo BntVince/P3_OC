@@ -1,0 +1,8 @@
+.header{
+    display: flex;
+    padding-top: 1rem;
+    &__logo{
+        width: 50%;
+        margin-inline: auto;
+    }
+}
