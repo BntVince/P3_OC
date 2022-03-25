@@ -1,0 +1,41 @@
+.fonct{
+    width: 90%;
+    max-width: 435px;
+    margin-block: 1rem;
+    margin-inline: auto;
+    &__menu{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0;
+        &__list{
+            min-width: 370px;
+            max-width: 430px;
+            background-color: lighten($color: $black, $amount: 95%);
+            @include shadow;
+            font-size: 20;
+            font-weight: 700;
+            padding-block: 2rem;
+            border-radius: 1.5rem;
+            display: flex;
+            position: relative;
+            &__num{
+                position: absolute;
+                bottom: 2rem;
+                left: -1rem;
+                background-color: $prim-color;
+                color: white;
+                font-size: 18;
+                font-weight: 500;
+                padding-inline: 0.6rem;
+                border-radius: 100%;
+                padding-block: 0.2rem;
+            }
+            > i {
+                margin-inline: 2rem;
+                font-size: 25;
+                color: gray;
+            }
+        }
+    }
+}
