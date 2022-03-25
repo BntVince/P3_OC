@@ -1,18 +1,18 @@
 .fonct{
     width: 90%;
     max-width: 435px;
-    margin-block: 1rem;
+    margin-block: 1em;
     margin-inline: auto;
     &__menu{
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 2em;
         padding: 0;
         &__list{
             max-width: 430px;
             background-color: lighten($color: $black, $amount: 95%);
             @include shadow;
-            font-size: 20;
+            font-size: 18;
             font-weight: 700;
             padding-block: 2rem;
             margin-left: 15px;
@@ -27,12 +27,13 @@
                 color: white;
                 font-size: 18;
                 font-weight: 500;
-                padding-inline: 0.6rem;
+                padding-inline: 0.6em;
                 border-radius: 100%;
-                padding-block: 0.2rem;
+                padding-block: 0.2em;
             }
             > i {
-                margin-inline: 2rem;
+                margin-left: 1em;
+                margin-right: 0.5em;
                 font-size: 25;
                 color: gray;
             }
