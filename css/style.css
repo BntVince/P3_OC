@@ -12,6 +12,17 @@ body {
   margin: 0;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 90%;
+  max-width: 435px;
+  margin-bottom: 1rem;
+  margin-inline: auto;
+}
+
 * {
   font-family: "Roboto", sans-serif;
   list-style: none;
@@ -30,10 +41,11 @@ h2 {
 
 .header {
   display: flex;
-  padding-top: 1rem;
+  width: 100%;
+  padding-block: 1rem;
 }
 .header__logo {
-  width: 50%;
+  width: 45%;
   margin-inline: auto;
 }
 
@@ -42,6 +54,14 @@ h2 {
   background-color: #e6e6e6;
   display: flex;
   justify-content: center;
+  position: relative;
+}
+.loc .shadow {
+  position: absolute;
+  top: -3px;
+  width: 100%;
+  height: 3px;
+  box-shadow: 0 5px 0.5rem 0rem rgba(0, 0, 0, 0.15);
 }
 .loc__txt {
   font-size: 1.2rem;
@@ -55,15 +75,6 @@ h2 {
   bottom: 0;
   right: 0;
   left: -2rem;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  width: 370px;
-  margin-bottom: 1rem;
 }
 
 .reserv {
@@ -86,10 +97,8 @@ h2 {
   border-radius: 100px;
   background-image: linear-gradient(175deg, #ff87df 0%, #ae4dde 100%);
   font-size: 1rem;
-  box-shadow: 0 10px 1rem 0.2rem rgba(0, 0, 0, 0.15);
-}
-.reserv__btn > a {
   color: white;
+  box-shadow: 0 10px 1rem 0.2rem rgba(0, 0, 0, 0.15);
 }
 
 .fonct {
@@ -105,13 +114,14 @@ h2 {
   padding: 0;
 }
 .fonct__menu__list {
-  min-width: 370px;
+  min-width: 340px;
   max-width: 430px;
   background-color: #f2f2f2;
   box-shadow: 0 10px 1rem 0.2rem rgba(0, 0, 0, 0.15);
   font-size: 20;
   font-weight: 700;
   padding-block: 2rem;
+  margin-left: 15px;
   border-radius: 1.5rem;
   display: flex;
   position: relative;
@@ -132,6 +142,73 @@ h2 {
   margin-inline: 2rem;
   font-size: 25;
   color: gray;
+}
+
+.rest {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+.rest h2 {
+  text-align: start;
+  margin-bottom: 0;
+}
+
+.container--card {
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 1rem 0.2rem rgba(0, 0, 0, 0.15);
+}
+.card__bg {
+  height: 15rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.card__bg--palette {
+  background: url(../../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.card__bg--note {
+  background: url(../../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.card__bg--francaise {
+  background: url(../../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.card__bg--delice {
+  background: url(../../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.card__descr {
+  height: 5rem;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.card__descr h3, .card__descr p {
+  margin: 0;
+  margin-left: 1rem;
+}
+.card__descr__heart {
+  font-size: 1.7rem;
+  cursor: pointer;
+  align-self: flex-end;
+  padding-right: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,6 +3,14 @@
     background-color: lighten($color: $black, $amount: 90%);
     display: flex;
     justify-content: center;
+    position: relative;
+    .shadow{
+        position: absolute;
+        top: -3px;
+        width: 100%;
+        height: 3px;
+        box-shadow: 0 5px 0.5rem 0rem rgba($color: #000000, $alpha: 0.15);
+    }
     &__txt{
     font-size: 1.2rem;
     font-weight: 700;

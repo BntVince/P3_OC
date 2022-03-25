@@ -9,13 +9,14 @@
         gap: 2rem;
         padding: 0;
         &__list{
-            min-width: 370px;
+            min-width: 340px;
             max-width: 430px;
             background-color: lighten($color: $black, $amount: 95%);
             @include shadow;
             font-size: 20;
             font-weight: 700;
             padding-block: 2rem;
+            margin-left: 15px;
             border-radius: 1.5rem;
             display: flex;
             position: relative;
