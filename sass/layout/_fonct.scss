@@ -9,7 +9,6 @@
         gap: 2rem;
         padding: 0;
         &__list{
-            min-width: 340px;
             max-width: 430px;
             background-color: lighten($color: $black, $amount: 95%);
             @include shadow;
