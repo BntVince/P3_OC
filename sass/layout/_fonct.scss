@@ -12,7 +12,7 @@
             max-width: 430px;
             background-color: lighten($color: $black, $amount: 95%);
             @include shadow;
-            font-size: 18;
+            font-size: 18px;
             font-weight: 700;
             padding-block: 2rem;
             margin-left: 15px;
@@ -21,8 +21,8 @@
             position: relative;
             &__num{
                 position: absolute;
-                bottom: 2rem;
-                left: -1rem;
+                bottom: 2em;
+                left: -1em;
                 background-color: $prim-color;
                 color: white;
                 font-size: 18;
@@ -34,7 +34,7 @@
             > i {
                 margin-left: 1em;
                 margin-right: 0.5em;
-                font-size: 25;
+                font-size: 23px;
                 color: gray;
             }
         }
