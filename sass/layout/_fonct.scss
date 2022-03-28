@@ -21,11 +21,11 @@
             position: relative;
             &__num{
                 position: absolute;
-                bottom: 2em;
+                bottom: 1.5em;
                 left: -1em;
                 background-color: $prim-color;
                 color: white;
-                font-size: 18;
+                font-size: 18px;
                 font-weight: 500;
                 padding-inline: 0.6em;
                 border-radius: 100%;
