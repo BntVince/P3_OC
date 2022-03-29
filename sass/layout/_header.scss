@@ -1,9 +1,15 @@
 .header{
     display: flex;
-    width: 100%;
+    @include widthm;
     padding-block: 1em;
     &__logo{
-        width: 300px;
+        width: 200px;
         margin-inline: auto;
+    }
+    &__arrow{
+        position: absolute;
+        font-size: 1.5em;
+        margin-top: 0.2em;
+        margin-left: 1em;
     }
 }
