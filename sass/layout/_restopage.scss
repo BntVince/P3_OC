@@ -19,6 +19,39 @@
     }
 }
 
+.form{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+ input[type="radio"] + label .menu__select__choose__hover{
+     flex-basis: 0;
+     background-color: $tert-color;
+     border-top-right-radius: 15px;
+     border-bottom-right-radius: 15px;
+     transform: translateX(100%);
+     transform-origin: right;
+     transition: all 350ms ease-in;
+    
+ }
+
+ input[type="radio"]:checked{
+    + label .menu__select__choose__hover{
+            flex-basis: 25%;
+            transform: translateX(0);
+            i{
+                transform: rotateZ(360deg);
+            }
+        }
+    }
+
+
+
+input{
+   display: none;
+}
+
 .menu{
     width: 100%;
     display: flex;
@@ -78,7 +111,17 @@
             margin: 0.5em;
             background-color: white;
             border-radius: 15px;
+            overflow: hidden;
             @include shadowlight;
+            &:hover{
+                .menu__select__choose__hover{
+                    transform: translateX(0) ;
+                    flex-basis: 25%;
+                    i {
+                     transform: rotateZ(360deg);
+                    }
+                }
+            }
             &__card{
                 cursor: pointer;
                 display:flex;
@@ -87,14 +130,15 @@
                 height: 5em;
                 &__descr{
                     margin: 0;
-                    margin-top: 0.5em;
+                    margin-top: 0.65em;
                     margin-left: 0.8em;
                     line-height: 1.8em;
-                    font-size: 17px;
+                    font-size: 16px;
+                    width: auto;
                     
                     > span {
                         font-weight: 600;
-                        font-size: 20px;
+                        font-size: 18px;
                     }
                 }
                 &__prix{
@@ -102,6 +146,19 @@
                     font-weight: 600;
                     align-self: flex-end;
                     margin-right: 0.5em;
+                    overflow: visible;
+                }
+            }
+            &__hover{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 25%;
+                i{
+                font-size: 30px;
+                color: white;
+                transform: rotateZ(0deg);
+                transition: all 350ms ease-in;
                 }
             }
         }

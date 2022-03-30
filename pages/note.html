@@ -18,101 +18,115 @@
 
         <div class="bg__resto bg__resto--note"></div>
 
-        <section class="menu menu--note">
-            <div class="menu__titre">
-                <h1>La note enchantée</h1>
-                <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="menu__select menu__select--entrees">
-                <h3 class="menu__select__titre">ENTREES</h3>
-                <div class="menu__select__choose">
-                    <div class="menu__select__choose__card">
-                        <p class="menu__select__choose__card__descr"><span>Ravioles de foie gras</span><br>Accompagnés de leur crème à la truffe</p>
-                        <p class="menu__select__choose__card__prix">25€</p>
+        <form method="post" action="traitement.php" class="form">
+            <section class="menu menu--note">
+                <div class="menu__titre">
+                    <h1>La note enchantée</h1>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                    <div class="menu__select menu__select--entrees">
+                        <h3 class="menu__select__titre">ENTREES</h3>
+
+                        <input type="radio" name="entrees" value="ravioles" id="ravioles"/>
+                        <label for="ravioles" class="menu__select__choose">
+                            <div class="menu__select__choose__card">
+                                <p class="menu__select__choose__card__descr"><span>Ravioles de foie gras</span><br>Accompagnés de leur crème à la truffe</p>
+                                <p class="menu__select__choose__card__prix">25€</p>
+                            </div>
+                            <div class="menu__select__choose__checked"></div>
+                        </label>
+
+                        <input type="radio" name="entrees" value="caviar" id="caviar"/>
+                        <label for="caviar" class="menu__select__choose">
+                            <div class="menu__select__choose__card">
+                                <p class="menu__select__choose__card__descr"><span>Caviar osciètre</span><br>Sur blini à la farine de blé noir</p>
+                                <p class="menu__select__choose__card__prix">35€</p>
+                            </div>
+                            <div class="menu__select__choose__hover"></div>
+                        </label>
+
+                        <input type="radio" name="entrees" value="homard" id="homard"/>
+                        <label for="homard" class="menu__select__choose">
+                                <div class="menu__select__choose__card">
+                                    <p class="menu__select__choose__card__descr"><span>Homard et espuma de potiron</span><br>Marivé aux zeste d'orange</p>
+                                    <p class="menu__select__choose__card__prix">20€</p>
+                                </div>
+                                <div class="menu__select__choose__hover"></div>
+                        </label>
+
+                        <input type="radio" name="entrees" value="foiegras" id="foiegras"/>
+                        <label for="foiegras" class="menu__select__choose">
+                                <div class="menu__select__choose__card">
+                                    <p class="menu__select__choose__card__descr"><span>Foie gras de canard cuit entier</span><br>Confiture de figue et pain toasté</p>
+                                    <p class="menu__select__choose__card__prix">35€</p>
+                                </div>
+                                <div class="menu__select__choose__hover"></div>
+                        </label>
+
                     </div>
-                    <div class="menu__select__choose__hover"></div>
-                </div>
+                    <div class="menu__select menu__select--plats">
+                        <h3 class="menu__select__titre">PLATS</h3>
 
-                <div class="menu__select__choose">
-                    <div class="menu__select__choose__card">
-                        <p class="menu__select__choose__card__descr"><span>Caviar osciètre</span><br>Sur blini à la farine de blé noir</p>
-                        <p class="menu__select__choose__card__prix">35€</p>
+                        <input type="radio" name="plats" value="saintjacques" id="saintjacques"/>
+                        <label for="saintjacques" class="menu__select__choose">
+                            <div class="menu__select__choose__card">
+                                <p class="menu__select__choose__card__descr"><span>Noix de coquilles Saint-Jacques</span><br>Sur lit de purée de céleri-rave</p>
+                                <p class="menu__select__choose__card__prix">40€</p>
+                            </div>
+                            <div class="menu__select__choose__hover"></div>
+                        </label>
+
+                        <input type="radio" name="plats" value="langoustine" id="langoustine"/>
+                        <label for="langoustine" class="menu__select__choose">
+                                <div class="menu__select__choose__card">
+                                    <p class="menu__select__choose__card__descr"><span>Langoustine poêlée</span><br>Purée de patate douce</p>
+                                    <p class="menu__select__choose__card__prix">35€</p>
+                                </div>
+                                <div class="menu__select__choose__hover"></div>
+                        </label>
+
+                        <input type="radio" name="plats" value="queueboeuf" id="queueboeuf"/>
+                        <label for="queueboeuf" class="menu__select__choose">
+                                <div class="menu__select__choose__card">
+                                    <p class="menu__select__choose__card__descr"><span>Mijoté de queue de boeuf</span><br>Et riz sauvage aux zestes de citron</p>
+                                    <p class="menu__select__choose__card__prix">44€</p>
+                                </div>
+                                <div class="menu__select__choose__hover"></div>
+                        </label>
                     </div>
-                    <div class="menu__select__choose__hover"></div>
-                </div>
+                    <div class="menu__select menu__select--desserts">
+                        <h3 class="menu__select__titre">DESSERTS</h3>
 
-                <div class="menu__select__choose">
-                        <div class="menu__select__choose__card">
-                            <p class="menu__select__choose__card__descr"><span>Homard et espuma de potiron</span><br>Marivé aux zeste d'orange</p>
-                            <p class="menu__select__choose__card__prix">20€</p>
-                        </div>
-                        <div class="menu__select__choose__hover"></div>
-                </div>
+                        <input type="radio" name="desserts" value="macaron" id="macaron"/>
+                        <label for="macaron" class="menu__select__choose">
+                            <div class="menu__select__choose__card">
+                                <p class="menu__select__choose__card__descr"><span>Macaron noisette et chocolat</span><br>Glace au caramel brun et sel de Guérande</p>
+                                <p class="menu__select__choose__card__prix">18€</p>
+                            </div>
+                            <div class="menu__select__choose__hover"></div>
+                        </label>
 
-                <div class="menu__select__choose">
-                        <div class="menu__select__choose__card">
-                            <p class="menu__select__choose__card__descr"><span>Foie gras de canard cuit entier</span><br>Confiture de figue et pain toasté</p>
-                            <p class="menu__select__choose__card__prix">35€</p>
-                        </div>
-                        <div class="menu__select__choose__hover"></div>
-                </div>
+                        <input type="radio" name="desserts" value="baba" id="baba"/>
+                        <label for="baba" class="menu__select__choose">
+                                <div class="menu__select__choose__card">
+                                    <p class="menu__select__choose__card__descr"><span>Baba au rhum revisitén</span><br>Avec son coulis de citro</p>
+                                    <p class="menu__select__choose__card__prix">22€</p>
+                                </div>
+                                <div class="menu__select__choose__hover"></div>
+                        </label>
 
-            </div>
-            <div class="menu__select menu__select--plats">
-                <h3 class="menu__select__titre">PLATS</h3>
-                <div class="menu__select__choose">
-                    <div class="menu__select__choose__card">
-                        <p class="menu__select__choose__card__descr"><span>Noix de coquilles Saint-Jacques</span><br>Sur lit de purée de céleri-rave</p>
-                        <p class="menu__select__choose__card__prix">40€</p>
+                        <input type="radio" name="desserts" value="tartecitron" id="tartecitron"/>
+                        <label for="tartecitron" class="menu__select__choose">
+                                <div class="menu__select__choose__card">
+                                    <p class="menu__select__choose__card__descr"><span>Tarte au citron meringuée</span><br>Déstructurée</p>
+                                    <p class="menu__select__choose__card__prix">23€</p>
+                                </div>
+                                <div class="menu__select__choose__hover"></div>
+                        </label>
                     </div>
-                    <div class="menu__select__choose__hover"></div>
-                </div>
-
-                <div class="menu__select__choose">
-                        <div class="menu__select__choose__card">
-                            <p class="menu__select__choose__card__descr"><span>Langoustine poêlée</span><br>Purée de patate douce</p>
-                            <p class="menu__select__choose__card__prix">35€</p>
-                        </div>
-                        <div class="menu__select__choose__hover"></div>
-                </div>
-
-                <div class="menu__select__choose">
-                        <div class="menu__select__choose__card">
-                            <p class="menu__select__choose__card__descr"><span>Mijoté de queue de boeuf</span><br>Et riz sauvage aux zestes de citron</p>
-                            <p class="menu__select__choose__card__prix">44€</p>
-                        </div>
-                        <div class="menu__select__choose__hover"></div>
-                </div>
-            </div>
-            <div class="menu__select menu__select--desserts">
-                <h3 class="menu__select__titre">DESSERTS</h3>
-
-                <div class="menu__select__choose">
-                    <div class="menu__select__choose__card">
-                        <p class="menu__select__choose__card__descr"><span>Macaron noisette et chocolat</span><br>Glace au caramel brun et sel de Guérande</p>
-                        <p class="menu__select__choose__card__prix">18€</p>
-                    </div>
-                    <div class="menu__select__choose__hover"></div>
-                </div>
-
-                <div class="menu__select__choose">
-                        <div class="menu__select__choose__card">
-                            <p class="menu__select__choose__card__descr"><span>Baba au rhum revisitén</span><br>Avec son coulis de citro</p>
-                            <p class="menu__select__choose__card__prix">22€</p>
-                        </div>
-                        <div class="menu__select__choose__hover"></div>
-                </div>
-
-                <div class="menu__select__choose">
-                        <div class="menu__select__choose__card">
-                            <p class="menu__select__choose__card__descr"><span>Tarte au citron meringuée</span><br>Déstructurée</p>
-                            <p class="menu__select__choose__card__prix">23€</p>
-                        </div>
-                        <div class="menu__select__choose__hover"></div>
-                </div>
-            </div>
-            <button class="btn"><p>Commander</p></button>
-        </section>
+                    <input type="submit" value="Commander" class="btn"/>
+            </section>
+        </form>
         <footer class="footer">
             <h5>ohmyfood</h5>
             <ul class="footer__nav">
