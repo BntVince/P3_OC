@@ -1,3 +1,83 @@
+.menu__select__titre {
+  position: relative;
+}
+.menu__select__titre::after {
+  content: "";
+  position: absolute;
+  top: 1.3em;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #99E2D0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 200ms ease-in;
+}
+.menu__select:hover .menu__select__titre::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.menu__select__choose {
+  position: relative;
+}
+.menu__select__choose__card__prix {
+  transition: all 200ms ease-in;
+}
+.menu__select__choose__card__descr {
+  transform-origin: left;
+  transform: scaleX(1);
+  transition: all 200ms ease-in;
+}
+.menu__select__choose__hover {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  transform: translateX(100%);
+  transform-origin: right;
+  transition: all 200ms ease-in;
+  width: 85px;
+  height: 100%;
+}
+.menu__select__choose__hover i {
+  font-size: 30px;
+  color: white;
+  transform: rotateZ(0deg);
+  transition: transform 400ms cubic-bezier(0.42, 0, 0.78, 1.43);
+}
+.menu__select__choose:hover .menu__select__choose__card__descr {
+  padding-right: calc(1em + 80px);
+}
+.menu__select__choose:hover .menu__select__choose__card__prix {
+  transform: translateX(-80px);
+}
+.menu__select__choose:hover .menu__select__choose__hover {
+  transform: translateX(0);
+}
+.menu__select__choose:hover .menu__select__choose__hover i {
+  transform: rotateZ(360deg);
+}
+
+input[type=radio]:checked + label .menu__select__choose__card__descr {
+  padding-right: 80px;
+}
+input[type=radio]:checked + label .menu__select__choose__card__prix {
+  transform: translateX(-80px);
+}
+input[type=radio]:checked + label .menu__select__choose__hover {
+  transform: translateX(0);
+}
+input[type=radio]:checked + label .menu__select__choose__hover i {
+  transform: rotateZ(360deg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -282,25 +362,7 @@ h2 {
   margin: 0;
 }
 
-input[type=radio] + label .menu__select__choose__hover {
-  flex-basis: 0;
-  background-color: #99E2D0;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  transform: translateX(100%);
-  transform-origin: right;
-  transition: all 350ms ease-in;
-}
-
-input[type=radio]:checked + label .menu__select__choose__hover {
-  flex-basis: 25%;
-  transform: translateX(0);
-}
-input[type=radio]:checked + label .menu__select__choose__hover i {
-  transform: rotateZ(360deg);
-}
-
-input {
+input[type=radio] {
   display: none;
 }
 
@@ -342,24 +404,6 @@ input {
   width: max-content;
   margin-left: 0.5em;
   font-weight: 400;
-  position: relative;
-}
-.menu__select__titre::after {
-  content: "";
-  position: absolute;
-  top: 1.3em;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 3px;
-  background-color: #99E2D0;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 200ms ease-in;
-}
-.menu__select:hover .menu__select__titre::after {
-  transform: scaleX(1);
-  transform-origin: left;
 }
 .menu__select__choose {
   display: flex;
@@ -369,27 +413,22 @@ input {
   overflow: hidden;
   box-shadow: 0 5px 0.5rem 0rem rgba(0, 0, 0, 0.15);
 }
-.menu__select__choose:hover .menu__select__choose__hover {
-  transform: translateX(0);
-  flex-basis: 25%;
-}
-.menu__select__choose:hover .menu__select__choose__hover i {
-  transform: rotateZ(360deg);
-}
 .menu__select__choose__card {
   cursor: pointer;
   display: flex;
   width: 100%;
   justify-content: space-between;
   height: 5em;
+  overflow: hidden;
 }
 .menu__select__choose__card__descr {
   margin: 0;
   margin-top: 0.65em;
   margin-left: 0.8em;
   line-height: 1.8em;
+  padding-right: 1em;
   font-size: 16px;
-  width: auto;
+  overflow: hidden;
 }
 .menu__select__choose__card__descr > span {
   font-weight: 600;
@@ -399,20 +438,8 @@ input {
   font-size: 18px;
   font-weight: 600;
   align-self: flex-end;
-  margin-right: 0.5em;
+  margin-right: 0.75em;
   overflow: visible;
-}
-.menu__select__choose__hover {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 25%;
-}
-.menu__select__choose__hover i {
-  font-size: 30px;
-  color: white;
-  transform: rotateZ(0deg);
-  transition: all 350ms ease-in;
 }
 .menu__select--desserts {
   margin-bottom: 2em;
