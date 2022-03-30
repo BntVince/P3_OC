@@ -26,12 +26,10 @@
             position: relative;
             &__card{
                 &__prix{
-                    transition: all $transdur ease-in;
+                    transition: transform $transdur ease-in 30ms;
                 }
                 &__descr{
-                    transform-origin: left;
-                    transform: scaleX(1);
-                    transition: all $transdur ease-in;
+                    transition: padding $transdur ease-in 30ms;
                 }
             }
             &__hover{

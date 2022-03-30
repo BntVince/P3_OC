@@ -22,12 +22,10 @@
   position: relative;
 }
 .menu__select__choose__card__prix {
-  transition: all 200ms ease-in;
+  transition: transform 200ms ease-in 30ms;
 }
 .menu__select__choose__card__descr {
-  transform-origin: left;
-  transform: scaleX(1);
-  transition: all 200ms ease-in;
+  transition: padding 200ms ease-in 30ms;
 }
 .menu__select__choose__hover {
   position: absolute;
