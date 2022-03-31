@@ -95,6 +95,61 @@ input[type=radio]:checked + label .menu__select__choose__hover i {
   color: transparent;
 }
 
+.btn {
+  opacity: 0.9;
+  transition: all 200ms ease-in;
+}
+.btn:hover {
+  box-shadow: 0 10px 1rem 0.2rem rgba(0, 0, 0, 0.15);
+  opacity: 1;
+}
+
+.card {
+  transition: all 200ms ease-in;
+  position: relative;
+}
+.card__descr {
+  background-color: white;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  bottom: 2.5em;
+  right: 2.5%;
+  width: 90%;
+  height: 15px;
+  border-radius: 1em;
+  background-color: red;
+  transform: rotateZ(10deg);
+  box-shadow: 0 10px 0.7rem 1rem rgba(0, 0, 0, 0.2);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 200ms ease-in;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  bottom: 2.5em;
+  left: 2.5%;
+  width: 90%;
+  height: 15px;
+  border-radius: 1rem;
+  background-color: red;
+  transform: rotateZ(-10deg);
+  box-shadow: 0 10px 0.7rem 1rem rgba(0, 0, 0, 0.2);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 200ms ease-in;
+}
+.card:hover, .card:active {
+  transform: scale(1.025);
+}
+.card:hover::after, .card:hover::before, .card:active::after, .card:active::before {
+  opacity: 1;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -121,7 +176,7 @@ body {
 
 .btn {
   cursor: pointer;
-  width: 13em;
+  width: 15em;
   height: 3.5rem;
   padding-inline: 1.5rem;
   margin-inline: auto;
@@ -129,7 +184,7 @@ body {
   border-radius: 100px;
   background-image: linear-gradient(175deg, #ff87df 0%, #ae4dde 100%);
   font-size: 18px;
-  box-shadow: 0 10px 1rem 0.2rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 0.5rem 0rem rgba(0, 0, 0, 0.15);
   color: white;
 }
 .btn p {
@@ -303,7 +358,7 @@ h2 {
 .card {
   background-color: white;
   border-radius: 1rem;
-  box-shadow: 0 10px 1rem 0.2rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 0.5rem 0rem rgba(0, 0, 0, 0.15);
   position: relative;
 }
 .card__new {

@@ -71,10 +71,11 @@ input[type="radio"]:checked{
             transform: rotateZ(360deg*2);
         }
     }
- }
- 
+}
 
- .heart{
+// Anim heart:hover
+
+.heart{
     width: 1.7em;
     height: 1.7em;
     padding-left: 2.5em;
@@ -91,7 +92,7 @@ input[type="radio"]:checked{
             opacity: 1;
         }
     }
- .fa-heart{
+    .fa-heart{
     position: absolute;
     top: 0;
     right: 1em;
@@ -108,4 +109,65 @@ input[type="radio"]:checked{
         -webkit-background-clip: text;
         color: transparent;
     }
- }
+}
+
+// anim btn
+
+.btn{
+    opacity: 0.9;
+    transition: all 200ms ease-in;
+    &:hover{
+        @include shadow;
+        opacity: 1;
+    }
+}
+
+// Anim card accueil
+
+.card{
+    transition: all 200ms ease-in;
+    position: relative;
+    &__descr{
+        background-color: white;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: 2.5em;
+        right: 2.5%;
+        width: 90%;
+        height: 15px;
+        border-radius: 1em;
+        background-color: red;
+        transform: rotateZ(10deg);
+        box-shadow:  0 10px 0.7rem 1rem rgba($color: #000000, $alpha: 0.2);
+        z-index: -1;
+        opacity: 0;
+        transition: opacity 200ms ease-in;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: 2.5em;
+        left: 2.5%;
+        width: 90%;
+        height: 15px;
+        border-radius: 1rem;
+        background-color: red;
+        transform: rotateZ(-10deg);
+        box-shadow:  0 10px 0.7rem 1rem rgba($color: #000000, $alpha: 0.2);
+        z-index: -1;
+        opacity: 0;
+        transition: opacity 200ms ease-in;
+    }
+    &:hover,
+    &:active{
+        transform: scale(1.025);
+        &::after,
+        &::before{
+            opacity: 1;
+        }
+    }
+}
