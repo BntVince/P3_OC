@@ -62,6 +62,39 @@ input[type=radio]:checked + label .menu__select__choose__hover i {
   transform: rotateZ(720deg);
 }
 
+.heart {
+  width: 1.7em;
+  height: 1.7em;
+  padding-left: 2.5em;
+  cursor: pointer;
+  align-self: flex-end;
+  padding-right: 2rem;
+  position: relative;
+}
+.heart:hover .fa-regular, .heart:active .fa-regular {
+  opacity: 0;
+}
+.heart:hover .fa-solid, .heart:active .fa-solid {
+  opacity: 1;
+}
+.heart .fa-heart {
+  position: absolute;
+  top: 0;
+  right: 1em;
+  bottom: 0;
+  font-size: 1.7em;
+  transition: opacity 250ms ease-in;
+}
+.heart .fa-regular {
+  opacity: 1;
+}
+.heart .fa-solid {
+  opacity: 0;
+  background: linear-gradient(45deg, #ff87df 0%, #ae4dde 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -329,7 +362,9 @@ h2 {
   margin-left: 1rem;
 }
 .card__descr__heart {
-  font-size: 1.7rem;
+  width: 1.7em;
+  height: 1.7em;
+  padding-left: 1.5em;
   cursor: pointer;
   align-self: flex-end;
   padding-right: 2rem;

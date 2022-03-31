@@ -73,3 +73,39 @@ input[type="radio"]:checked{
     }
  }
  
+
+ .heart{
+    width: 1.7em;
+    height: 1.7em;
+    padding-left: 2.5em;
+    cursor: pointer;
+    align-self: flex-end;
+    padding-right: 2rem;
+    position: relative;
+    &:hover,
+    &:active{
+        .fa-regular{
+            opacity: 0;
+        }
+        .fa-solid{
+            opacity: 1;
+        }
+    }
+ .fa-heart{
+    position: absolute;
+    top: 0;
+    right: 1em;
+    bottom: 0;
+    font-size: 1.7em;
+    transition: opacity 250ms ease-in;
+    }
+    .fa-regular{
+        opacity: 1;
+    }
+    .fa-solid{
+        opacity: 0;
+        background: linear-gradient(45deg, rgba(255,135,223,1) 0%, rgba(174,77,222,1) 100%);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+ }
