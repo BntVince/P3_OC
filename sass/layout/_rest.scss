@@ -16,6 +16,23 @@
     background-color: white;
     border-radius: 1rem;
     @include shadow;
+    position: relative;
+    &__new{
+        position: absolute;
+        right: 1em;
+        top: 1em;
+        background-color: $tert-color;
+        padding: 0.5em 1em;
+        border-radius: 4px;
+        font-weight: 800;
+        color: darken($color: $tert-color, $amount: 40%);
+    }
+    &--francaise,
+    &--delice{
+        .card__new{
+            display: none;
+        }
+    }
     &__bg{
         height: 12rem;
         border-top-left-radius: 1rem;

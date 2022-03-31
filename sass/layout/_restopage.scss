@@ -1,7 +1,7 @@
 
 
 .bg__resto{
-    height: 20em;
+    height: clamp(16em, 10vw, 200px);
     width: 100%;
     background-size: 120%;
     background-position: center;
