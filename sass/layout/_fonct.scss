@@ -1,14 +1,17 @@
 .fonct{
     width: 90%;
-    max-width: 435px;
     margin-block: 1em;
     margin-inline: auto;
     &__menu{
+        width: 100%;
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
         gap: 2em;
         padding: 0;
         &__list{
+            min-width: 300px;
             max-width: 430px;
             background-color: rgb(245, 245, 245);
             @include shadow;
