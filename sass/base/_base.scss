@@ -40,7 +40,7 @@ body{
     }
 }
 
-p{
+p, span{
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;

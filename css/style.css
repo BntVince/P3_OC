@@ -155,7 +155,6 @@ input[type=radio]:checked + label .menu__select__choose__hover i {
   width: 100%;
   height: 100%;
   top: 0;
-  left: center;
   z-index: 1000;
   display: flex;
   flex-direction: column;
@@ -313,7 +312,7 @@ input[type=radio]:checked + label .menu__select__choose__hover i {
   animation: menucard 550ms both;
 }
 .menu__card--1 {
-  animation-delay: 0;
+  animation-delay: 0s;
 }
 .menu__card--2 {
   animation-delay: 550ms;
@@ -368,7 +367,7 @@ body {
   margin-block: 17px;
 }
 
-p {
+p, span {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -751,6 +750,7 @@ input[type=radio] {
   font-weight: 600;
   align-self: flex-end;
   margin-right: 0.75em;
+  margin-bottom: 1em;
   overflow: visible;
 }
 

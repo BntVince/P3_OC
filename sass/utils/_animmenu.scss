@@ -23,7 +23,7 @@ $carddur: 550ms;
 .menu__card{
     animation: menucard $carddur both;
     &--1{
-        animation-delay: 0;
+        animation-delay: 0s;
     }
     &--2{
         animation-delay: $carddur*1;
