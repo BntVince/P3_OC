@@ -23,7 +23,8 @@ body{
 }
 .btn{
     cursor: pointer;
-    width: 15em;
+    min-width: 10em;
+    max-width: 15em;
     height: 3.5rem;
     padding-inline: 1.5rem;
     margin-inline: auto;

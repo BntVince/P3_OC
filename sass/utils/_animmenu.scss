@@ -1,0 +1,42 @@
+$carddur: 550ms;
+
+@keyframes menucard {
+    from{
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+// @keyframes menuselect {
+//     0%{
+//         transform: translateX(-300%);
+//     }
+//     100%{
+//         transform: translateX(0);
+//     }
+// }
+
+.menu__card{
+    animation: menucard $carddur both;
+    &--1{
+        animation-delay: $carddur;
+    }
+    &--2{
+        animation-delay: $carddur*2;
+    }
+    &--3{
+        animation-delay: $carddur*3;
+    }
+    &--4{
+        animation-delay: $carddur*4;
+    }
+}
+
+// .menu__select{
+//     animation: menuselect cubic-bezier(0.67, 0.1, 0.71, 1.19);
+//     animation-duration: $carddur;
+// }
