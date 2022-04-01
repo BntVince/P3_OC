@@ -13,12 +13,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 
 .card{
-    width: clamp(300px, 200vw, 430px);
+    width: clamp(300px, 85vw, 430px);
     background-color: white;
     border-radius: 1rem;
     @include shadowlight;
